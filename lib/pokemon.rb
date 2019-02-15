@@ -1,5 +1,6 @@
 class Pokemon
-  @@id =[]
+
+
 attr_accessor :id, :name, :type, :db, :hp
 def initialize ( id:, name:, type:, db:nil, hp:)
 @id=id
@@ -18,6 +19,13 @@ end
 def self.find(id,db)
 file = db.execute("SELECT * FROM pokemon WHERE id= ?" ,id).flatten
 Pokemon.new(id:file[0], name:file[1], type:file[2], hp:file[3])
+end
+
+
+
+
+
+
 end
 
 

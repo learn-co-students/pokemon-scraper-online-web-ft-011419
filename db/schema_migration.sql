@@ -1,2 +1,2 @@
 CREATE TABLE IF NOT EXISTS pokemon(id INTEGER PRIMARY KEY, name TEXT, type TEXT);
-ALTER  TABLE  pokeman ADD COLUMN  hp ,REAL  ;
+ALTER  TABLE  pokeman ADD   hp ,REAL  ;
